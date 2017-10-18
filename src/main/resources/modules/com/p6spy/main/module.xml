@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module xmlns="urn:jboss:module:1.3" name="com.p6spy">
+    <resources>
+        <artifact name="p6spy:p6spy:${p6spy.version}"/>
+        <resource-root path="spy.properties" />
+    </resources>
+    <dependencies>
+        <module name="javax.api"/>
+        <module name="javax.transaction.api"/>
+        <module name="org.slf4j"/>
+    </dependencies>
+</module>
