@@ -10,7 +10,7 @@
 
     <name>p6spy-mysql-fraction</name>
     <description>p6spy fraction (module) for Wildfly Swarm using mysql module.</description>
-    <url>https://github.com/PiotrRaszkowski/p6spy-fraction</url>
+    <url>https://github.com/PiotrRaszkowski/p6spy-mysql-fraction</url>
 
     <organization>
         <name>Piotr Raszkowski</name>
@@ -47,9 +47,9 @@
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:https://github.com/PiotrRaszkowski/p6spy-fraction</connection>
-        <url>scm:git:https://github.com/PiotrRaszkowski/p6spy-fraction</url>
-        <developerConnection>scm:git:https://github.com/PiotrRaszkowski/p6spy-fraction</developerConnection>
+        <connection>scm:git:https://github.com/PiotrRaszkowski/p6spy-mysql-fraction</connection>
+        <url>scm:git:https://github.com/PiotrRaszkowski/p6spy-mysql-fraction</url>
+        <developerConnection>scm:git:https://github.com/PiotrRaszkowski/p6spy-mysql-fraction</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
@@ -67,6 +67,8 @@
         <javax.inject.version>1</javax.inject.version>
         <cdi-api.version>2.0</cdi-api.version>
         <p6spy.version>3.0.0</p6spy.version>
+        <p6spy-formatters.version>1.0</p6spy-formatters.version>
+        <mysql-connector-java.version>5.1.44</mysql-connector-java.version>
 
         <!-- Plugins. -->
         <maven-compiler-plugin.version>3.6.2</maven-compiler-plugin.version>
@@ -77,7 +79,6 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
-        <mysql-connector-java.version>5.1.44</mysql-connector-java.version>
     </properties>
 
     <dependencyManagement>
@@ -132,6 +133,12 @@
             <artifactId>p6spy</artifactId>
             <version>${p6spy.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>pl.devcoffee</groupId>
+            <artifactId>p6spy-formatters</artifactId>
+            <version>${p6spy-formatters.version}</version>
         </dependency>
     </dependencies>
 
