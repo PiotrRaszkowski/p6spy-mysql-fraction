@@ -10,6 +10,5 @@
         <module name="javax.transaction.api"/>
         <module name="org.slf4j"/>
         <module name="com.mysql" />
-        <module name="org.wildfly.swarm.datasources" />
     </dependencies>
 </module>
